@@ -1,85 +1,102 @@
 ---
 name: hamming-questions
-description: [TODO: Complete and informative explanation of what the skill does and when to use it. Include WHEN to use this skill - specific scenarios, file types, or tasks that trigger it.]
+description: >
+  Guided introspection technique based on Richard Hamming's "What are the important problems
+  in your field?" adapted by CFAR for life and career planning. Use when the user wants to:
+  (1) identify the most important problem in their life or work, (2) find what's blocking
+  their progress, (3) do a strategic life review, (4) practice deep introspection about
+  priorities, (5) run a Hamming Circle with others, or (6) discover hidden bottlenecks.
+  Triggers: "hamming question", "most important problem", "what should I work on",
+  "biggest bottleneck", "life review", "strategic planning", "what's holding me back",
+  "limiting factor", "CFAR".
 ---
 
 # Hamming Questions
 
-## Overview
+A guided introspection technique based on Richard Hamming's provocative question: "What are the most important problems in your field, and why aren't you working on them?" Adapted by CFAR for personal life and career strategic review.
 
-[TODO: 1-2 sentences explaining what this skill enables]
+## Three Modes
 
-## Structuring This Skill
+1. **Design Mode** — Help create a structured Hamming introspection session
+2. **Practice Mode** — Walk through the question battery on a specific domain
+3. **Execute Mode** — Run a full Hamming session to surface the user's real priorities and bottlenecks
 
-[TODO: Choose the structure that best fits this skill's purpose. Common patterns:
+## The Question Battery
 
-**1. Workflow-Based** (best for sequential processes)
-- Works well when there are clear step-by-step procedures
-- Example: DOCX skill with "Workflow Decision Tree" → "Reading" → "Creating" → "Editing"
-- Structure: ## Overview → ## Workflow Decision Tree → ## Step 1 → ## Step 2...
+Present these in sequence, giving the user time to reflect on each:
 
-**2. Task-Based** (best for tool collections)
-- Works well when the skill offers different operations/capabilities
-- Example: PDF skill with "Quick Start" → "Merge PDFs" → "Split PDFs" → "Extract Text"
-- Structure: ## Overview → ## Quick Start → ## Task Category 1 → ## Task Category 2...
+### Core Problem Identification
+- "What's the biggest problem in your life right now?"
+- "If you think about the gap between your current life and a better version, what would close the largest fraction of that gap?"
 
-**3. Reference/Guidelines** (best for standards or specifications)
-- Works well for brand guidelines, coding standards, or requirements
-- Example: Brand styling with "Brand Guidelines" → "Colors" → "Typography" → "Features"
-- Structure: ## Overview → ## Guidelines → ## Specifications → ## Usage...
+### Limiting Factor / Bottleneck
+- "What's the limiting factor on your growth and progress?"
+- "What's the key resource you have the least of?"
+- "The speed of a chemical reaction is determined by the slowest step. What's yours?"
 
-**4. Capabilities-Based** (best for integrated systems)
-- Works well when the skill provides multiple interrelated features
-- Example: Product Management with "Core Capabilities" → numbered capability list
-- Structure: ## Overview → ## Core Capabilities → ### 1. Feature → ### 2. Feature...
+### Recursive Bottleneck
+- "What's preventing you from solving that bottleneck?"
+- "Is there a meta-problem whose resolution would unlock solving many other problems?"
 
-Patterns can be mixed and matched as needed. Most skills combine patterns (e.g., start with task-based, add workflow for complex operations).
+### Suppressed Problems
+- "What do you feel you're 'not allowed to care about'?"
+- "What do you generally not think about because it feels too big or impossible?"
 
-Delete this entire "Structuring This Skill" section when done - it's just guidance.]
+### Genre-Savviness
+- "If your life were a novel, what would be the obvious next step?"
+- "Where is the plot dragging?"
+- "If someone isn't making major impact in 5 years, what would have stopped them?"
 
-## [TODO: Replace with the first main section based on chosen structure]
+### Quantity-Sensitivity
+- "Which problems have effects that are the largest order of magnitude?"
+- "Where would a 10% improvement have the biggest impact?"
 
-[TODO: Add content here. See examples in existing skills:
-- Code samples for technical skills
-- Decision trees for complex workflows
-- Concrete examples with realistic user requests
-- References to scripts/templates/references as needed]
+## Facilitation Approach
 
-## Resources
+### Individual Session (30-45 min)
+1. **Settle in** (2-3 min): Quiet contemplation, deep breathing
+2. **Initial brainstorm** (10-15 min): Work through the question battery. Write freely, don't filter.
+3. **Bottleneck exploration** (10 min): For the biggest problem, dig into what's preventing progress
+4. **Suppressed problems** (5 min): Check for things felt to be "too big" or "not allowed"
+5. **Synthesis** (5-10 min): What patterns emerge? What surprised you?
 
-This skill includes example resource directories that demonstrate how to organize different types of bundled resources:
+### Pushing Past Surface Answers
+- When someone gives an answer, ask: "And what would solving that enable?" (upward)
+- Ask: "What prevents you from solving that?" (downward)
+- "Is there a more general pattern here?"
+- When someone says "that's impossible": "What makes it impossible? Is that truly immutable?"
+- "If you had unlimited resources, what would you do first?"
 
-### scripts/
-Executable code (Python/Bash/etc.) that can be run directly to perform specific operations.
+## Common Patterns People Discover
 
-**Examples from other skills:**
-- PDF skill: `fill_fillable_fields.py`, `extract_form_field_info.py` - utilities for PDF manipulation
-- DOCX skill: `document.py`, `utilities.py` - Python modules for document processing
+- **Alignment failures**: Working on expedient/safe problems rather than important ones
+- **Suppressed dreams**: Things marked "impossible" that are actually addressable
+- **Meta-level bottlenecks**: The constraint is belief about ability, not actual ability
+- **Temporal blindness**: Prioritizing urgency over importance
+- **Lack of reflection**: The biggest bottleneck is not having systematically thought about what matters
 
-**Appropriate for:** Python scripts, shell scripts, or any executable code that performs automation, data processing, or specific operations.
+## Practice Exercise
 
-**Note:** Scripts may be executed without loading into context, but can still be read by Claude for patching or environment adjustments.
+1. Pick one domain (career, relationships, health, projects)
+2. Work through the full question battery for that domain
+3. Identify the #1 Hamming problem
+4. Identify the #1 bottleneck preventing work on it
+5. Generate 3 concrete next steps to address the bottleneck
+6. Murphyjitsu those next steps
 
-### references/
-Documentation and reference material intended to be loaded into context to inform Claude's process and thinking.
+## Hamming Circle Format (Group)
 
-**Examples from other skills:**
-- Product management: `communication.md`, `context_building.md` - detailed workflow guides
-- BigQuery: API reference documentation and query examples
-- Finance: Schema documentation, company policies
+Optimal group: 4 people, ~20 min per person:
+1. One person presents their Hamming problem
+2. Others listen, then ask questions to deepen understanding (not solve)
+3. Focus on: "Is there a more general pattern?" and "What assumption haven't you questioned?"
+4. Person summarizes what they got from the conversation
 
-**Appropriate for:** In-depth documentation, API references, database schemas, comprehensive guides, or any detailed information that Claude should reference while working.
+Recommended frequency: every 6-18 months.
 
-### assets/
-Files not intended to be loaded into context, but rather used within the output Claude produces.
+## Integration
 
-**Examples from other skills:**
-- Brand styling: PowerPoint template files (.pptx), logo files
-- Frontend builder: HTML/React boilerplate project directories
-- Typography: Font files (.ttf, .woff2)
-
-**Appropriate for:** Templates, boilerplate code, document templates, images, icons, fonts, or any files meant to be copied or used in the final output.
-
----
-
-**Any unneeded directories can be deleted.** Not every skill requires all three types of resources.
+- **Goal Factoring**: Factor the Hamming problem into sub-goals
+- **Murphyjitsu**: Stress-test plans to address it
+- **Internal Double Crux**: When the bottleneck is internal conflict
+- **Resolve Cycles**: "Just try to solve it right now" for 5 minutes

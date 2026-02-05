@@ -1,85 +1,101 @@
 ---
 name: murphyjitsu
-description: [TODO: Complete and informative explanation of what the skill does and when to use it. Include WHEN to use this skill - specific scenarios, file types, or tasks that trigger it.]
+description: >
+  CFAR rationality technique for bulletproofing plans by systematically imagining failure modes
+  and creating defenses. Combines Murphy's Law with pre-mortem analysis. Use when the user:
+  (1) has a plan they want to stress-test, (2) wants to identify what could go wrong before
+  it does, (3) needs to build a more robust plan, (4) wants to practice pre-mortem thinking,
+  or (5) is about to start a project and wants to anticipate obstacles.
+  Triggers: "murphyjitsu", "what could go wrong", "pre-mortem", "stress test my plan",
+  "inner simulator", "surprise-o-meter", "failure modes", "plan review", "CFAR".
 ---
 
-# Murphyjitsu
+# Murphyjitsu (Inner Simulator)
 
-## Overview
+A CFAR technique for bulletproofing plans by deliberately imagining failure, identifying the most likely failure modes, and creating defenses. Named after Murphy's Law + martial arts ("jitsu").
 
-[TODO: 1-2 sentences explaining what this skill enables]
+## Three Modes
 
-## Structuring This Skill
+1. **Design Mode** — Help create a robust plan with failure modes already addressed
+2. **Practice Mode** — Walk through the technique on a practice plan to build skill
+3. **Execute Mode** — Stress-test a real plan the user is about to implement
 
-[TODO: Choose the structure that best fits this skill's purpose. Common patterns:
+## Core Algorithm
 
-**1. Workflow-Based** (best for sequential processes)
-- Works well when there are clear step-by-step procedures
-- Example: DOCX skill with "Workflow Decision Tree" → "Reading" → "Creating" → "Editing"
-- Structure: ## Overview → ## Workflow Decision Tree → ## Step 1 → ## Step 2...
+```
+1. State a concrete plan
+2. Imagine: "It's the day after. The plan failed. What happened?"
+3. Check the surprise-o-meter
+4. If genuinely shocked → done
+5. Otherwise → identify the most likely failure mode
+6. Create a defense against it
+7. Go to step 2
+```
 
-**2. Task-Based** (best for tool collections)
-- Works well when the skill offers different operations/capabilities
-- Example: PDF skill with "Quick Start" → "Merge PDFs" → "Split PDFs" → "Extract Text"
-- Structure: ## Overview → ## Quick Start → ## Task Category 1 → ## Task Category 2...
+## The Surprise-o-Meter
 
-**3. Reference/Guidelines** (best for standards or specifications)
-- Works well for brand guidelines, coding standards, or requirements
-- Example: Brand styling with "Brand Guidelines" → "Colors" → "Typography" → "Features"
-- Structure: ## Overview → ## Guidelines → ## Specifications → ## Usage...
+After imagining failure, assess how surprised you'd be:
+- **"Yeah, sounds right"** → Keep iterating. You have known failure modes.
+- **"Somewhat surprised"** → Getting close. Address remaining risks.
+- **"Genuinely shocked"** → Your inner simulator endorses the plan. Stop here.
 
-**4. Capabilities-Based** (best for integrated systems)
-- Works well when the skill provides multiple interrelated features
-- Example: Product Management with "Core Capabilities" → numbered capability list
-- Structure: ## Overview → ## Core Capabilities → ### 1. Feature → ### 2. Feature...
+The technique continues until you'd be genuinely shocked to see the plan fail.
 
-Patterns can be mixed and matched as needed. Most skills combine patterns (e.g., start with task-based, add workflow for complex operations).
+## Step-by-Step Facilitation
 
-Delete this entire "Structuring This Skill" section when done - it's just guidance.]
+### 1. Articulate the Plan
+"What's your concrete plan? What specific actions, in what order, by when?"
+Ensure the plan is concrete enough to simulate. Vague goals can't be Murphyjitsued.
 
-## [TODO: Replace with the first main section based on chosen structure]
+### 2. Initial Simulation
+"Imagine you've executed this plan and suddenly realize it failed. Oh no — why? What happened?"
+Don't answer from analysis. Let intuition respond. The first answer is often most accurate.
 
-[TODO: Add content here. See examples in existing skills:
-- Code samples for technical skills
-- Decision trees for complex workflows
-- Concrete examples with realistic user requests
-- References to scripts/templates/references as needed]
+### 3. Identify the Failure Mode
+"What's the most likely way this goes wrong?"
+"If you had to bet money on what would derail this, what would you say?"
 
-## Resources
+### 4. Create the Defense
+"What action or preparation would prevent this failure mode?"
+Defenses should be: specific, actionable, low-cost, and preventive.
 
-This skill includes example resource directories that demonstrate how to organize different types of bundled resources:
+### 5. Re-simulate
+"Now imagine the plan WITH this defense. It still failed. What happened this time?"
+Repeat until the surprise-o-meter reads "shocked."
 
-### scripts/
-Executable code (Python/Bash/etc.) that can be run directly to perform specific operations.
+## Key Insight: Outside View Correction
 
-**Examples from other skills:**
-- PDF skill: `fill_fillable_fields.py`, `extract_form_field_info.py` - utilities for PDF manipulation
-- DOCX skill: `document.py`, `utilities.py` - Python modules for document processing
+Your inner simulator is better at predicting OTHER people's failures than your own. Correction: "Take your plan and imagine another person made it. How would it likely fail for them?"
 
-**Appropriate for:** Python scripts, shell scripts, or any executable code that performs automation, data processing, or specific operations.
+## Facilitation Prompts
 
-**Note:** Scripts may be executed without loading into context, but can still be read by Claude for patching or environment adjustments.
+**Opening**: "Tell me your plan. Be specific — what exactly will you do and when?"
 
-### references/
-Documentation and reference material intended to be loaded into context to inform Claude's process and thinking.
+**Simulation**: "Close your eyes. It's [deadline day]. The plan didn't work. What went wrong?"
 
-**Examples from other skills:**
-- Product management: `communication.md`, `context_building.md` - detailed workflow guides
-- BigQuery: API reference documentation and query examples
-- Finance: Schema documentation, company policies
+**Probing**: "What's the single most likely failure point?" / "What have you seen go wrong in similar situations?"
 
-**Appropriate for:** In-depth documentation, API references, database schemas, comprehensive guides, or any detailed information that Claude should reference while working.
+**Defense**: "What's the simplest thing you could do to prevent that?" / "What would someone who's done this before do differently?"
 
-### assets/
-Files not intended to be loaded into context, but rather used within the output Claude produces.
+**Calibration**: "If I told you the plan failed, how surprised would you be — genuinely shocked, or just disappointed?"
 
-**Examples from other skills:**
-- Brand styling: PowerPoint template files (.pptx), logo files
-- Frontend builder: HTML/React boilerplate project directories
-- Typography: Font files (.ttf, .woff2)
+## Common Failure Modes of the Technique
 
-**Appropriate for:** Templates, boilerplate code, document templates, images, icons, fonts, or any files meant to be copied or used in the final output.
+- **Self-bias**: Your inner sim is optimistic about your own plans. Use outside view.
+- **Unpredictable domains**: Works best for tactical, near-term plans. Less useful for existential life questions.
+- **Unrealistic expectations**: No plan is foolproof. Goal is "shocked if it fails," not "impossible to fail."
+- **Emotional failure modes**: Murphyjitsu handles logistical failures well but may miss motivation loss. Combine with IDC.
 
----
+## Practice Exercise
 
-**Any unneeded directories can be deleted.** Not every skill requires all three types of resources.
+1. Pick an upcoming plan (meeting, project, event)
+2. Run 3-5 failure simulation cycles
+3. Write down each failure mode and its defense
+4. After 5 minutes: "Would you be genuinely shocked if this failed now?"
+5. If not, continue. If yes, commit to the plan with defenses.
+
+## Integration
+
+- **Goal Factoring**: Factor goals first, then Murphyjitsu the plan
+- **TAPs**: Create TAPs for implementing the defenses
+- **Resolve Cycles**: If Murphyjitsu reveals the plan is fundamentally broken, do a 5-minute Resolve Cycle to find a better approach

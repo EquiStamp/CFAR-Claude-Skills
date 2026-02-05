@@ -1,85 +1,97 @@
 ---
 name: aversion-factoring
-description: [TODO: Complete and informative explanation of what the skill does and when to use it. Include WHEN to use this skill - specific scenarios, file types, or tasks that trigger it.]
+description: >
+  CFAR rationality technique for decomposing aversions into specific addressable components
+  using the LEGO brick model. Use when the user: (1) avoids something they believe they
+  should do, (2) says "I hate doing X" and wants to understand why, (3) wants to overcome
+  a specific aversion, (4) practice decomposing emotional resistance, or (5) wants to
+  understand the gap between what they want to want and what they actually want.
+  Triggers: "aversion factoring", "I hate", "I avoid", "I can't make myself",
+  "why do I resist", "overcome aversion", "ugh field", "CFAR", "decompose aversion".
 ---
 
 # Aversion Factoring
 
-## Overview
+A CFAR technique for decomposing complex aversions into their specific, addressable components. Based on the LEGO brick model: no activity is monolithically aversive — aversions are collections of distinct sub-aversions that lose valuable detail when averaged together.
 
-[TODO: 1-2 sentences explaining what this skill enables]
+## Three Modes
 
-## Structuring This Skill
+1. **Design Mode** — Map out an aversion and create a targeted plan to address each component
+2. **Practice Mode** — Walk through the technique on a moderate aversion to build skill
+3. **Execute Mode** — Decompose and address a real aversion blocking the user
 
-[TODO: Choose the structure that best fits this skill's purpose. Common patterns:
+## Core Insight
 
-**1. Workflow-Based** (best for sequential processes)
-- Works well when there are clear step-by-step procedures
-- Example: DOCX skill with "Workflow Decision Tree" → "Reading" → "Creating" → "Editing"
-- Structure: ## Overview → ## Workflow Decision Tree → ## Step 1 → ## Step 2...
+"I hate going to the gym" isn't one feeling — it's a bundle: the drive there, the locker room, the equipment, the self-consciousness, the time cost, the post-workout soreness. You might be fine with 80% of it and only truly averse to 1-2 specific things. Fix those specific things and the whole aversion may dissolve.
 
-**2. Task-Based** (best for tool collections)
-- Works well when the skill offers different operations/capabilities
-- Example: PDF skill with "Quick Start" → "Merge PDFs" → "Split PDFs" → "Extract Text"
-- Structure: ## Overview → ## Quick Start → ## Task Category 1 → ## Task Category 2...
+## Core Process
 
-**3. Reference/Guidelines** (best for standards or specifications)
-- Works well for brand guidelines, coding standards, or requirements
-- Example: Brand styling with "Brand Guidelines" → "Colors" → "Typography" → "Features"
-- Structure: ## Overview → ## Guidelines → ## Specifications → ## Usage...
+### Step 1: Articulate the Aversion
+"What do you avoid or dislike? Be as specific as you can about the activity."
 
-**4. Capabilities-Based** (best for integrated systems)
-- Works well when the skill provides multiple interrelated features
-- Example: Product Management with "Core Capabilities" → numbered capability list
-- Structure: ## Overview → ## Core Capabilities → ### 1. Feature → ### 2. Feature...
+### Step 2: Decompose Into Sub-Aversions
+List everything that contributes to the aversion:
+- "Walk through doing [the thing] step by step. Where does your enthusiasm drop?"
+- "What's the worst part? What's the second worst?"
+- Include: weird impulses, trivial inconveniences, concrete sensory details
+- Don't filter — trivial things matter (a missing barbell pad prevented someone from going to the gym for months)
 
-Patterns can be mixed and matched as needed. Most skills combine patterns (e.g., start with task-based, add workflow for complex operations).
+### Step 3: Button Test
+For each sub-aversion, mentally press a button that removes it: "If [sub-aversion] magically disappeared, would you do the thing?" This reveals which sub-aversions are actually blocking you vs. which are minor irritants.
 
-Delete this entire "Structuring This Skill" section when done - it's just guidance.]
+### Step 4: Categorize and Address
+For each significant sub-aversion:
 
-## [TODO: Replace with the first main section based on chosen structure]
+**External/situational** → Address with concrete action:
+- Self-consciousness at gym → Go at off-peak hours, wear headphones
+- Missing equipment → Buy your own pad/mat
+- Time cost → Reduce to 15 minutes instead of 1 hour
 
-[TODO: Add content here. See examples in existing skills:
-- Code samples for technical skills
-- Decision trees for complex workflows
-- Concrete examples with realistic user requests
-- References to scripts/templates/references as needed]
+**Internal/psychological** → Address with reframing or graduated exposure:
+- Fear of looking foolish → Graduated exposure: start with low-stakes situations
+- Feeling of wasting time → Reframe: "This is an investment in energy for everything else"
+- Boredom → Add podcasts/audiobooks/music
 
-## Resources
+### Step 5: Mindful Walkthrough
+Conduct an actual or imagined walkthrough of the activity with defenses in place. Where does resistance still appear? Address remaining pockets.
 
-This skill includes example resource directories that demonstrate how to organize different types of bundled resources:
+## Facilitation Prompts
 
-### scripts/
-Executable code (Python/Bash/etc.) that can be run directly to perform specific operations.
+**Opening**: "What's something you avoid or hate doing? Let's break it down into pieces."
 
-**Examples from other skills:**
-- PDF skill: `fill_fillable_fields.py`, `extract_form_field_info.py` - utilities for PDF manipulation
-- DOCX skill: `document.py`, `utilities.py` - Python modules for document processing
+**Decomposition**: "Walk me through what it's actually like to do this. Start from the beginning." / "Where exactly does it start feeling bad?" / "What's the single worst moment?"
 
-**Appropriate for:** Python scripts, shell scripts, or any executable code that performs automation, data processing, or specific operations.
+**Button tests**: "If I could magically remove [sub-aversion], would you be okay with the rest?" / "Which one thing, if fixed, would make the biggest difference?"
 
-**Note:** Scripts may be executed without loading into context, but can still be read by Claude for patching or environment adjustments.
+**Solutions**: "For [specific sub-aversion], what would make it tolerable?" / "Who does this without minding it? What's different about their setup?"
 
-### references/
-Documentation and reference material intended to be loaded into context to inform Claude's process and thinking.
+## Common Patterns
 
-**Examples from other skills:**
-- Product management: `communication.md`, `context_building.md` - detailed workflow guides
-- BigQuery: API reference documentation and query examples
-- Finance: Schema documentation, company policies
+- **Trivial inconvenience dominance**: The blocking factor is often surprisingly small and easy to fix
+- **Sensory specificity**: The aversion is about a specific physical sensation, not the activity in general
+- **Social component**: Many aversions are really about what others think
+- **Time/energy accounting**: The aversion is about opportunity cost, not the activity itself
 
-**Appropriate for:** In-depth documentation, API references, database schemas, comprehensive guides, or any detailed information that Claude should reference while working.
+## Common Failure Modes
 
-### assets/
-Files not intended to be loaded into context, but rather used within the output Claude produces.
+- **Treating as monolithic**: The whole point is decomposition. If the user says "I just hate it," push for specifics.
+- **Dismissing trivial inconveniences**: Small things compound. Take them seriously.
+- **Over-applying to protective aversions**: Not all aversions should be overcome. Fear of standing near speeding cars is good. Ask: "Is this aversion protecting you from something real?"
+- **External fixes for internal problems**: Some sub-aversions need reframing, not environmental changes.
+- **Stopping too early**: Use button tests to verify you've found the real blockers.
 
-**Examples from other skills:**
-- Brand styling: PowerPoint template files (.pptx), logo files
-- Frontend builder: HTML/React boilerplate project directories
-- Typography: Font files (.ttf, .woff2)
+## Practice Exercise
 
-**Appropriate for:** Templates, boilerplate code, document templates, images, icons, fonts, or any files meant to be copied or used in the final output.
+1. Pick a moderate aversion (a chore, a type of meeting, a health habit)
+2. List 5+ specific sub-aversions
+3. Button-test each one
+4. Identify the top 2-3 actual blockers
+5. Design one concrete fix for each
+6. Imagined walkthrough: Is it better now?
 
----
+## Integration
 
-**Any unneeded directories can be deleted.** Not every skill requires all three types of resources.
+- **Goal Factoring**: Aversion Factoring is goal factoring focused on the cost side
+- **Internal Double Crux**: When the aversion reflects a genuine internal disagreement
+- **TAPs**: Create trigger-action plans to implement the fixes
+- **Focusing**: Access the felt sense of the aversion for deeper understanding

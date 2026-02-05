@@ -1,85 +1,94 @@
 ---
 name: internal-double-crux
-description: [TODO: Complete and informative explanation of what the skill does and when to use it. Include WHEN to use this skill - specific scenarios, file types, or tasks that trigger it.]
+description: >
+  CFAR rationality technique for resolving internal conflicts by facilitating dialogue between
+  competing motivations or "sub-agents" within the mind. Use when the user: (1) feels torn
+  between two options or motivations, (2) experiences "should" vs "want" conflicts,
+  (3) can't motivate themselves despite believing something is right, (4) wants to understand
+  procrastination or self-sabotage, (5) has internal resistance they can't explain, or
+  (6) wants to practice parts-work for better self-understanding. Related to IFS.
+  Triggers: "internal double crux", "IDC", "torn between", "part of me wants",
+  "I should but", "inner conflict", "self-sabotage", "competing motivations",
+  "parts work", "IFS", "CFAR".
 ---
 
-# Internal Double Crux
+# Internal Double Crux (IDC)
 
-## Overview
+A CFAR technique for resolving internal conflicts by treating competing motivations as legitimate "sub-agents" and facilitating dialogue between them. The goal is genuine integration — not willpower or suppression — so all parts are authentically on board.
 
-[TODO: 1-2 sentences explaining what this skill enables]
+## Three Modes
 
-## Structuring This Skill
+1. **Design Mode** — Identify and map internal conflicts worth resolving
+2. **Practice Mode** — Walk through IDC on a moderate internal tension to build skill
+3. **Execute Mode** — Facilitate real IDC on an active internal conflict
 
-[TODO: Choose the structure that best fits this skill's purpose. Common patterns:
+## Why IDC Matters
 
-**1. Workflow-Based** (best for sequential processes)
-- Works well when there are clear step-by-step procedures
-- Example: DOCX skill with "Workflow Decision Tree" → "Reading" → "Creating" → "Editing"
-- Structure: ## Overview → ## Workflow Decision Tree → ## Step 1 → ## Step 2...
+Willpower is costly and unsustainable. When Part A wants X and Part B wants Y, forcing Part A's agenda means Part B keeps sabotaging. IDC achieves alignment where all parts cooperate because their concerns are genuinely addressed.
 
-**2. Task-Based** (best for tool collections)
-- Works well when the skill offers different operations/capabilities
-- Example: PDF skill with "Quick Start" → "Merge PDFs" → "Split PDFs" → "Extract Text"
-- Structure: ## Overview → ## Quick Start → ## Task Category 1 → ## Task Category 2...
+## Core Process
 
-**3. Reference/Guidelines** (best for standards or specifications)
-- Works well for brand guidelines, coding standards, or requirements
-- Example: Brand styling with "Brand Guidelines" → "Colors" → "Typography" → "Features"
-- Structure: ## Overview → ## Guidelines → ## Specifications → ## Usage...
+### Step 1: Find the Internal Disagreement
+Signs: "I should but I don't" / "Part of me wants X, part wants Y" / procrastination on something important / guilt about a preference you can't shake.
 
-**4. Capabilities-Based** (best for integrated systems)
-- Works well when the skill provides multiple interrelated features
-- Example: Product Management with "Core Capabilities" → numbered capability list
-- Structure: ## Overview → ## Core Capabilities → ### 1. Feature → ### 2. Feature...
+### Step 2: Name Both Sides Charitably (~85% of the Work)
+Use names each side would endorse:
+- "The part that values rest" NOT "The lazy part"
+- "The part that wants connection" NOT "The needy part"
 
-Patterns can be mixed and matched as needed. Most skills combine patterns (e.g., start with task-based, add workflow for complex operations).
+Ask: "If this part could speak, how would it introduce itself?"
 
-Delete this entire "Structuring This Skill" section when done - it's just guidance.]
+### Step 3: Give Each Side Voice
+For each side, explore:
+- "What does this side want? What are its goals?"
+- "What does this side know that the other side doesn't?"
+- "What would be bad if only the other side controlled everything?"
+- "What is this side protecting against?"
 
-## [TODO: Replace with the first main section based on chosen structure]
+**Critical**: Use Focusing to access felt sense. Arguments must be emotionally salient, not detached analysis.
 
-[TODO: Add content here. See examples in existing skills:
-- Code samples for technical skills
-- Decision trees for complex workflows
-- Concrete examples with realistic user requests
-- References to scripts/templates/references as needed]
+### Step 4: Seek Internal Cruxes
+Ask each side: "What would you need to see or believe to be okay with the other side's approach?"
 
-## Resources
+Look for factual disagreements between the sides — testable predictions, not just feelings.
 
-This skill includes example resource directories that demonstrate how to organize different types of bundled resources:
+### Step 5: Resonate and Integrate
+Check for genuine resolution:
+- Does each side feel heard?
+- Has each side incorporated the other's information?
+- Is there a solution honoring both sets of concerns?
+- Check body: genuine resolution often feels like warmth, relief, or settling
+- If any part feels unheard, go back to Step 3
 
-### scripts/
-Executable code (Python/Bash/etc.) that can be run directly to perform specific operations.
+**Success sign**: Intrinsic motivation replaces willpower.
 
-**Examples from other skills:**
-- PDF skill: `fill_fillable_fields.py`, `extract_form_field_info.py` - utilities for PDF manipulation
-- DOCX skill: `document.py`, `utilities.py` - Python modules for document processing
+## Facilitation Approach
 
-**Appropriate for:** Python scripts, shell scripts, or any executable code that performs automation, data processing, or specific operations.
+Act as neutral mediator. Translate between the user's parts. Ensure equal voice:
+- "Which side feels more urgent? Let that side speak first."
+- After one side speaks: "What does the other side think about that?"
+- Watch for domination: "I want to make sure [other side] gets heard too."
+- Periodically: "Does [this side] feel accurately represented?"
 
-**Note:** Scripts may be executed without loading into context, but can still be read by Claude for patching or environment adjustments.
+## Common Failure Modes
 
-### references/
-Documentation and reference material intended to be loaded into context to inform Claude's process and thinking.
+- **Uncharitable naming**: Demeaning one side prevents dialogue. Rename.
+- **Partisan moderating**: Secretly siding with one part. Offer extra support to the "underdog."
+- **Stopping before full agreement**: Lingering resistance means it'll resurface.
+- **Intellectualizing**: Redirect to sensation. "What does it feel like, not what do you think?"
+- **Forcing one side to lose**: Integration means both core concerns are met.
 
-**Examples from other skills:**
-- Product management: `communication.md`, `context_building.md` - detailed workflow guides
-- BigQuery: API reference documentation and query examples
-- Finance: Schema documentation, company policies
+## Practice Exercise
 
-**Appropriate for:** In-depth documentation, API references, database schemas, comprehensive guides, or any detailed information that Claude should reference while working.
+1. Pick something you "should" do but resist
+2. Name both sides charitably
+3. Give each side 2 minutes to state its case
+4. Find what each side knows that the other doesn't
+5. Propose a solution honoring both
+6. Check: Does it feel genuinely good, or like forced compromise?
 
-### assets/
-Files not intended to be loaded into context, but rather used within the output Claude produces.
+## Integration
 
-**Examples from other skills:**
-- Brand styling: PowerPoint template files (.pptx), logo files
-- Frontend builder: HTML/React boilerplate project directories
-- Typography: Font files (.ttf, .woff2)
-
-**Appropriate for:** Templates, boilerplate code, document templates, images, icons, fonts, or any files meant to be copied or used in the final output.
-
----
-
-**Any unneeded directories can be deleted.** Not every skill requires all three types of resources.
+- **Focusing**: Access felt sense of each side before and during dialogue
+- **Goal Factoring**: Decompose what each side actually wants
+- **Aversion Factoring**: When one side's concern is an aversion, decompose it

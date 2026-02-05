@@ -1,85 +1,107 @@
 ---
 name: focusing
-description: [TODO: Complete and informative explanation of what the skill does and when to use it. Include WHEN to use this skill - specific scenarios, file types, or tasks that trigger it.]
+description: >
+  Gendlin's Focusing technique adapted by CFAR for accessing pre-verbal bodily knowledge
+  ("felt sense") to gain insight on problems. Use when the user: (1) feels stuck and
+  analytical thinking isn't helping, (2) wants to understand what they really feel about
+  something, (3) needs to access intuition or gut feelings, (4) wants to check if their
+  intellectual conclusions match their deeper sense, (5) is doing Internal Double Crux
+  and needs to access each side's felt sense, or (6) wants to practice body awareness
+  for better decision-making.
+  Triggers: "focusing", "felt sense", "what do I really feel", "gut feeling",
+  "body awareness", "Gendlin", "something feels off", "I can't put it into words",
+  "check in with myself", "CFAR".
 ---
 
-# Focusing
+# Focusing (Gendlin's)
 
-## Overview
+A technique for accessing pre-verbal bodily knowledge — the "felt sense" — to gain insight on problems that analytical thinking alone can't resolve. Developed by Eugene Gendlin, adapted by CFAR.
 
-[TODO: 1-2 sentences explaining what this skill enables]
+## Three Modes
 
-## Structuring This Skill
+1. **Design Mode** — Help choose what issue to Focus on and set up conditions
+2. **Practice Mode** — Walk through the six steps on a low-stakes topic to build the skill
+3. **Execute Mode** — Guide real Focusing on an active issue
 
-[TODO: Choose the structure that best fits this skill's purpose. Common patterns:
+## Important Note for Text-Based Facilitation
 
-**1. Workflow-Based** (best for sequential processes)
-- Works well when there are clear step-by-step procedures
-- Example: DOCX skill with "Workflow Decision Tree" → "Reading" → "Creating" → "Editing"
-- Structure: ## Overview → ## Workflow Decision Tree → ## Step 1 → ## Step 2...
+Focusing normally uses body language and presence cues. In text, compensate by: keeping prompts short and spaced, building in explicit pauses, checking in frequently, using the user's own words, and distinguishing sensation from analysis.
 
-**2. Task-Based** (best for tool collections)
-- Works well when the skill offers different operations/capabilities
-- Example: PDF skill with "Quick Start" → "Merge PDFs" → "Split PDFs" → "Extract Text"
-- Structure: ## Overview → ## Quick Start → ## Task Category 1 → ## Task Category 2...
+## The Six Steps
 
-**3. Reference/Guidelines** (best for standards or specifications)
-- Works well for brand guidelines, coding standards, or requirements
-- Example: Brand styling with "Brand Guidelines" → "Colors" → "Typography" → "Features"
-- Structure: ## Overview → ## Guidelines → ## Specifications → ## Usage...
+### 1. Clearing Space
+"What's been on your mind? What are the things bothering you right now?"
+Don't solve anything — just identify and mentally set aside each issue. Pick one to focus on.
 
-**4. Capabilities-Based** (best for integrated systems)
-- Works well when the skill provides multiple interrelated features
-- Example: Product Management with "Core Capabilities" → numbered capability list
-- Structure: ## Overview → ## Core Capabilities → ### 1. Feature → ### 2. Feature...
+### 2. Getting a Felt Sense
+"Think about [the issue]. Don't analyze it — just bring it to mind. How do you feel about this whole thing? Not what you think, but what you feel?"
 
-Patterns can be mixed and matched as needed. Most skills combine patterns (e.g., start with task-based, add workflow for complex operations).
+"What does your body sense? Any physical sensation — tightness, heaviness, pressure, warmth, lightness? Check your chest, stomach, throat."
 
-Delete this entire "Structuring This Skill" section when done - it's just guidance.]
+If nothing comes: "Sometimes it's very subtle. Compare: is your stomach right now more tense or relaxed compared to total comfort?" or "Does it show up as an image, mood, or atmosphere rather than a physical sensation?"
 
-## [TODO: Replace with the first main section based on chosen structure]
+### 3. Getting a Handle
+"What word, phrase, or image captures the quality of what you're sensing?"
 
-[TODO: Add content here. See examples in existing skills:
-- Code samples for technical skills
-- Decision trees for complex workflows
-- Concrete examples with realistic user requests
-- References to scripts/templates/references as needed]
+Offer quality words if stuck: tight, stuck, heavy, light, numb, gloopy, sharp, fuzzy, prickly, foggy, like a wall, like a knot, like water.
 
-## Resources
+"Don't overthink — what's the first word that comes to mind?"
 
-This skill includes example resource directories that demonstrate how to organize different types of bundled resources:
+### 4. Resonating
+"Say that word back to yourself and check: does it fit? Does your body go 'yes' to it?"
 
-### scripts/
-Executable code (Python/Bash/etc.) that can be run directly to perform specific operations.
+"When you say [word], what does the felt sense do? Does it relax, stay the same, or shift?"
 
-**Examples from other skills:**
-- PDF skill: `fill_fillable_fields.py`, `extract_form_field_info.py` - utilities for PDF manipulation
-- DOCX skill: `document.py`, `utilities.py` - Python modules for document processing
+If not quite right: "What would be more accurate?" Keep iterating until something fits with a subtle "yes" signal.
 
-**Appropriate for:** Python scripts, shell scripts, or any executable code that performs automation, data processing, or specific operations.
+### 5. Asking
+"Now ask your felt sense: What is it about this whole situation that makes it so [stuck/tight/heavy]?"
 
-**Note:** Scripts may be executed without loading into context, but can still be read by Claude for patching or environment adjustments.
+"Don't answer from your head. Just ask and wait. What wants to come?"
 
-### references/
-Documentation and reference material intended to be loaded into context to inform Claude's process and thinking.
+Other questions to try: "What's the worst of this?" / "What does this need?" / "What should happen?" / "What does my body know about this that I haven't said?"
 
-**Examples from other skills:**
-- Product management: `communication.md`, `context_building.md` - detailed workflow guides
-- BigQuery: API reference documentation and query examples
-- Finance: Schema documentation, company policies
+### 6. Receiving
+"What shifted, changed, or became clear? How does it feel now compared to a few minutes ago?"
 
-**Appropriate for:** In-depth documentation, API references, database schemas, comprehensive guides, or any detailed information that Claude should reference while working.
+If there's a shift: "Say more about that." / "What does that new sense feel like?"
 
-### assets/
-Files not intended to be loaded into context, but rather used within the output Claude produces.
+If no clear shift: "Even if nothing dramatic changed, what tiny difference do you notice?"
 
-**Examples from other skills:**
-- Brand styling: PowerPoint template files (.pptx), logo files
-- Frontend builder: HTML/React boilerplate project directories
-- Typography: Font files (.ttf, .woff2)
+## Redirecting from Intellectualization
 
-**Appropriate for:** Templates, boilerplate code, document templates, images, icons, fonts, or any files meant to be copied or used in the final output.
+The most common failure mode. When the user starts analyzing rather than sensing:
+- "I notice you're explaining the situation. Let me ask differently: what does it *feel* like in your body?"
+- "Are you noticing a sensation, or thinking about the situation?"
+- "Pause. I want to know what you sense, not what you think."
 
----
+## When to Use Focusing vs. Other Techniques
 
-**Any unneeded directories can be deleted.** Not every skill requires all three types of resources.
+- **Stuck and don't know why** → Focusing
+- **Know the problem but can't decide** → Goal Factoring or Double Crux
+- **Internal conflict between parts** → Internal Double Crux (uses Focusing as a sub-process)
+- **Know what to do but can't make yourself** → Aversion Factoring or TAPs
+
+## Common Failure Modes
+
+- **Intellectualizing**: Analyzing instead of sensing. Redirect to body.
+- **Over-literalizing**: Treating steps as rigid algorithm. They're a guide.
+- **Confusing emotion labels with felt sense**: "I feel anxious" is a label. "There's a tightness in my chest" is a felt sense.
+- **Avoiding discomfort**: Pulling away from uncomfortable sensations. Normalize: "It's okay to feel this. We're just understanding it."
+- **Multiple felt senses**: "Let's work with one at a time. Which feels most present?"
+
+## Practice Exercise
+
+1. Pick something mildly bothering you (not traumatic)
+2. Spend 2 minutes just noticing what your body feels
+3. Find one word that captures it
+4. Check if the word fits
+5. Ask: "What is this about?"
+6. Notice what comes
+
+## Integration
+
+- **Internal Double Crux**: Use Focusing to access each side's felt sense
+- **Aversion Factoring**: Focusing reveals what the aversion is really about
+- **Goal Factoring**: Focusing checks if the logical analysis matches gut feeling
+- **Bucket Errors**: Focusing helps access the felt sense behind the flinch

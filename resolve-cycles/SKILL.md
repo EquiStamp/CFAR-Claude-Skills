@@ -1,85 +1,77 @@
 ---
 name: resolve-cycles
-description: [TODO: Complete and informative explanation of what the skill does and when to use it. Include WHEN to use this skill - specific scenarios, file types, or tasks that trigger it.]
+description: >
+  CFAR rationality technique using 5-minute time-boxed problem-solving to break through
+  procrastination and analysis paralysis. Use when the user: (1) is overthinking and
+  needs to just try solving something, (2) is stuck in analysis paralysis, (3) needs
+  permission to attempt something imperfect, (4) wants to build problem-solving momentum,
+  or (5) has a "bug" (life problem) that might be solvable with focused effort.
+  Triggers: "resolve cycle", "just try it", "5 minutes", "stop overthinking",
+  "analysis paralysis", "stuck", "procrastinating", "yoda timer", "bug hunt", "CFAR".
 ---
 
 # Resolve Cycles
 
-## Overview
+A CFAR technique using 5-minute time-boxed problem-solving to break through inertia. Deceptively simple but empirically effective: set a timer, actually solve the problem, stop.
 
-[TODO: 1-2 sentences explaining what this skill enables]
+## Three Modes
 
-## Structuring This Skill
+1. **Design Mode** — Help identify which problems ("bugs") are good candidates for resolve cycles
+2. **Practice Mode** — Run a resolve cycle on a low-stakes practice problem
+3. **Execute Mode** — Facilitate a real resolve cycle on an active stuck point
 
-[TODO: Choose the structure that best fits this skill's purpose. Common patterns:
+## Why It Works
 
-**1. Workflow-Based** (best for sequential processes)
-- Works well when there are clear step-by-step procedures
-- Example: DOCX skill with "Workflow Decision Tree" → "Reading" → "Creating" → "Editing"
-- Structure: ## Overview → ## Workflow Decision Tree → ## Step 1 → ## Step 2...
+Most procrastination isn't laziness — it's activation energy. People optimize for the *appearance* of trying rather than the *reality* of solving. Resolve Cycles strip away this appearance-management:
 
-**2. Task-Based** (best for tool collections)
-- Works well when the skill offers different operations/capabilities
-- Example: PDF skill with "Quick Start" → "Merge PDFs" → "Split PDFs" → "Extract Text"
-- Structure: ## Overview → ## Quick Start → ## Task Category 1 → ## Task Category 2...
+- **5 minutes is "safe"** — low psychological cost to invest
+- **Bounded urgency** — creates deadline pressure without excess demand
+- **Permission to succeed** — explicitly gives permission to actually solve the problem
+- **No meta-cognition** — the ticking clock eliminates second-guessing
 
-**3. Reference/Guidelines** (best for standards or specifications)
-- Works well for brand guidelines, coding standards, or requirements
-- Example: Brand styling with "Brand Guidelines" → "Colors" → "Typography" → "Features"
-- Structure: ## Overview → ## Guidelines → ## Specifications → ## Usage...
+## Core Process
 
-**4. Capabilities-Based** (best for integrated systems)
-- Works well when the skill provides multiple interrelated features
-- Example: Product Management with "Core Capabilities" → numbered capability list
-- Structure: ## Overview → ## Core Capabilities → ### 1. Feature → ### 2. Feature...
+### Cycle 1: Solve It
+1. **Identify the bug**: Any problem worth improving
+2. **Set a real timer**: 5 minutes, audible alarm (important — don't use silent timers)
+3. **Start immediately**: Don't prepare, brief, or explain. Just start.
+4. **Actually solve**: Focus exclusively on solving until the timer sounds
 
-Patterns can be mixed and matched as needed. Most skills combine patterns (e.g., start with task-based, add workflow for complex operations).
+### Cycle 2: Plan It (if Cycle 1 didn't fully solve)
+If incomplete, spend another 5 minutes creating an actionable plan where each step fits into a 5-minute resolve cycle.
 
-Delete this entire "Structuring This Skill" section when done - it's just guidance.]
+## Facilitation Approach
 
-## [TODO: Replace with the first main section based on chosen structure]
+- **Permission-giving**: "You have 5 minutes to solve this. Go."
+- **Narrative reframing** (if stuck): "What if you'd receive a billion dollars for solving this in 5 minutes?"
+- **Strip appearance**: "The goal is solving, not looking productive."
+- **Frequency limit**: Don't do more than one per hour — loses potency with overuse.
 
-[TODO: Add content here. See examples in existing skills:
-- Code samples for technical skills
-- Decision trees for complex workflows
-- Concrete examples with realistic user requests
-- References to scripts/templates/references as needed]
+## When to Use vs. Not
 
-## Resources
+**Good for**: Getting unstuck, building momentum, small-to-medium problems, breaking analysis paralysis, procrastination on implementable tasks, situations where the blocker is permission rather than capability.
 
-This skill includes example resource directories that demonstrate how to organize different types of bundled resources:
+**Not good for**: Huge structural problems (use Goal Factoring to break down first), information-gathering (you genuinely lack knowledge), emotional blocks (use Focusing or IDC), complex multi-stakeholder decisions.
 
-### scripts/
-Executable code (Python/Bash/etc.) that can be run directly to perform specific operations.
+## Practice Exercise: Bug Hunt + Resolve
 
-**Examples from other skills:**
-- PDF skill: `fill_fillable_fields.py`, `extract_form_field_info.py` - utilities for PDF manipulation
-- DOCX skill: `document.py`, `utilities.py` - Python modules for document processing
+1. List 5 "bugs" in your life (anything that could be better)
+2. Pick one that's medium-sized (not trivial, not massive)
+3. Set 5-minute timer
+4. Solve it
+5. Debrief: What surprised you? Was it easier than expected?
 
-**Appropriate for:** Python scripts, shell scripts, or any executable code that performs automation, data processing, or specific operations.
+## Common Failure Patterns
 
-**Note:** Scripts may be executed without loading into context, but can still be read by Claude for patching or environment adjustments.
+- **Over-ambition**: Choosing bugs that genuinely need 30+ min. Start medium.
+- **Weak timer**: Use an audible alarm you can't dismiss
+- **Pre-planning**: Strategizing instead of starting. Just start.
+- **Performance anxiety**: Frame as "just try for 5 min," not "prove yourself"
+- **Overuse**: Max one per hour for sustained effectiveness
 
-### references/
-Documentation and reference material intended to be loaded into context to inform Claude's process and thinking.
+## Integration
 
-**Examples from other skills:**
-- Product management: `communication.md`, `context_building.md` - detailed workflow guides
-- BigQuery: API reference documentation and query examples
-- Finance: Schema documentation, company policies
-
-**Appropriate for:** In-depth documentation, API references, database schemas, comprehensive guides, or any detailed information that Claude should reference while working.
-
-### assets/
-Files not intended to be loaded into context, but rather used within the output Claude produces.
-
-**Examples from other skills:**
-- Brand styling: PowerPoint template files (.pptx), logo files
-- Frontend builder: HTML/React boilerplate project directories
-- Typography: Font files (.ttf, .woff2)
-
-**Appropriate for:** Templates, boilerplate code, document templates, images, icons, fonts, or any files meant to be copied or used in the final output.
-
----
-
-**Any unneeded directories can be deleted.** Not every skill requires all three types of resources.
+- **Goal Factoring**: Break large problems into resolve-cycle-sized pieces
+- **TAPs**: Set up resolve cycles as responses to specific procrastination triggers
+- **Hamming Questions**: Use Hamming to identify which bugs matter most, then resolve cycle them
+- **Murphyjitsu**: After solving, stress-test the solution

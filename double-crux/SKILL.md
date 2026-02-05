@@ -1,85 +1,83 @@
 ---
 name: double-crux
-description: [TODO: Complete and informative explanation of what the skill does and when to use it. Include WHEN to use this skill - specific scenarios, file types, or tasks that trigger it.]
+description: >
+  CFAR rationality technique for resolving disagreements by finding shared underlying belief
+  divergence points (cruxes). Use when the user wants to: (1) resolve a disagreement by finding
+  the real point of contention, (2) prepare for a difficult conversation by mapping belief
+  structure, (3) practice collaborative truth-seeking, (4) examine beliefs by finding what
+  would change their mind, or (5) facilitate a structured disagreement between two positions.
+  Triggers: "double crux", "disagree", "what would change my mind", "crux",
+  "resolve disagreement", "find the real issue", "belief examination", "CFAR".
 ---
 
 # Double Crux
 
-## Overview
+A CFAR technique for resolving disagreements by collaboratively finding the underlying belief (the "crux") that drives both parties' positions. A crux is a fact that, if believed differently, would change your conclusion.
 
-[TODO: 1-2 sentences explaining what this skill enables]
+## Three Modes
 
-## Structuring This Skill
+1. **Design Mode** — Prepare for a disagreement by mapping belief structure and identifying likely cruxes
+2. **Practice Mode** — Walk through Double Crux on a practice topic to build skill
+3. **Execute Mode** — Facilitate real-time Double Crux on a live disagreement
 
-[TODO: Choose the structure that best fits this skill's purpose. Common patterns:
+## Prerequisites
 
-**1. Workflow-Based** (best for sequential processes)
-- Works well when there are clear step-by-step procedures
-- Example: DOCX skill with "Workflow Decision Tree" → "Reading" → "Creating" → "Editing"
-- Structure: ## Overview → ## Workflow Decision Tree → ## Step 1 → ## Step 2...
+Double Crux requires: genuine willingness to change one's mind, excitement about getting closer to truth, emotional safety, and epistemic humility. If prerequisites aren't met, acknowledge this and suggest alternatives.
 
-**2. Task-Based** (best for tool collections)
-- Works well when the skill offers different operations/capabilities
-- Example: PDF skill with "Quick Start" → "Merge PDFs" → "Split PDFs" → "Extract Text"
-- Structure: ## Overview → ## Quick Start → ## Task Category 1 → ## Task Category 2...
+## Core Process
 
-**3. Reference/Guidelines** (best for standards or specifications)
-- Works well for brand guidelines, coding standards, or requirements
-- Example: Brand styling with "Brand Guidelines" → "Colors" → "Typography" → "Features"
-- Structure: ## Overview → ## Guidelines → ## Specifications → ## Usage...
+### Step 1: Identify the Disagreement
+Find a statement A where parties genuinely disagree. Confirm it's real, not semantic.
 
-**4. Capabilities-Based** (best for integrated systems)
-- Works well when the skill provides multiple interrelated features
-- Example: Product Management with "Core Capabilities" → numbered capability list
-- Structure: ## Overview → ## Core Capabilities → ### 1. Feature → ### 2. Feature...
+### Step 2: Operationalize
+Move from abstract to concrete:
+- Attach numbers: "very likely" → "70% probable"
+- Define observable outcomes: "economy improves" → "GDP growth > 3%"
+- Make claims falsifiable: "How would we know if this were true or false?"
 
-Patterns can be mixed and matched as needed. Most skills combine patterns (e.g., start with task-based, add workflow for complex operations).
+### Step 3: Seek Cruxes
+Each party independently identifies cruxes — beliefs such that changing them would change their position on A. Key question: "If [belief B] were false, would you change your mind about A?"
 
-Delete this entire "Structuring This Skill" section when done - it's just guidance.]
+A **double crux** is a belief B where both parties disagree about B AND B causally influences both positions on A.
 
-## [TODO: Replace with the first main section based on chosen structure]
+### Step 4: Resonate
+Test if cruxes are genuine: "Does this really feel crucial?" / "Would you genuinely change your position?" Filter out pseudo-cruxes (claims that sound important but wouldn't actually shift your view).
 
-[TODO: Add content here. See examples in existing skills:
-- Code samples for technical skills
-- Decision trees for complex workflows
-- Concrete examples with realistic user requests
-- References to scripts/templates/references as needed]
+### Step 5: Recurse
+Take the double crux B and repeat. B becomes the new A. Seek crux C. Continue until you reach verifiable factual claims you can look up.
 
-## Resources
+## Prep Tool (Design Mode)
 
-This skill includes example resource directories that demonstrate how to organize different types of bundled resources:
+Before a difficult conversation:
+1. Identify your own cruxes
+2. Predict the other person's likely cruxes
+3. Find likely overlap
+4. Prepare operationalized versions of key claims
+5. Enter with genuine curiosity about their reasoning
 
-### scripts/
-Executable code (Python/Bash/etc.) that can be run directly to perform specific operations.
+## Solo Belief Examination
 
-**Examples from other skills:**
-- PDF skill: `fill_fillable_fields.py`, `extract_form_field_info.py` - utilities for PDF manipulation
-- DOCX skill: `document.py`, `utilities.py` - Python modules for document processing
+1. Pick a belief you hold strongly
+2. Steelman the opposing position
+3. Identify what facts would need to differ for you to hold the opposing view
+4. Research whether those facts are as you assume
+5. Update confidence based on findings
 
-**Appropriate for:** Python scripts, shell scripts, or any executable code that performs automation, data processing, or specific operations.
+## Facilitation Prompts
 
-**Note:** Scripts may be executed without loading into context, but can still be read by Claude for patching or environment adjustments.
+**Operationalizing**: "Can you make that more specific?" / "Can you put a number on that?" / "What would we observe if you're right?"
 
-### references/
-Documentation and reference material intended to be loaded into context to inform Claude's process and thinking.
+**Finding cruxes**: "What are the key reasons you believe this?" / "If [reason] turned out wrong, would you change your position?" / "What evidence would change your mind?"
 
-**Examples from other skills:**
-- Product management: `communication.md`, `context_building.md` - detailed workflow guides
-- BigQuery: API reference documentation and query examples
-- Finance: Schema documentation, company policies
+**Testing**: "Hypothetically, if I proved [crux] is false, would you actually update?"
 
-**Appropriate for:** In-depth documentation, API references, database schemas, comprehensive guides, or any detailed information that Claude should reference while working.
+**When stuck**: "Let's each draw out our reasoning. What beliefs feed into your position?"
 
-### assets/
-Files not intended to be loaded into context, but rather used within the output Claude produces.
+## Common Failure Modes
 
-**Examples from other skills:**
-- Brand styling: PowerPoint template files (.pptx), logo files
-- Frontend builder: HTML/React boilerplate project directories
-- Typography: Font files (.ttf, .woff2)
-
-**Appropriate for:** Templates, boilerplate code, document templates, images, icons, fonts, or any files meant to be copied or used in the final output.
-
----
-
-**Any unneeded directories can be deleted.** Not every skill requires all three types of resources.
+- **Pseudo-cruxes**: Always test with the resonance check
+- **Insufficient operationalization**: Force concrete predictions
+- **Emotional loading**: Start with lower-stakes practice topics
+- **Bad faith**: Requires genuine truth-seeking from both sides
+- **Recursion overload**: Stop when it stops being productive
+- **Terminal value disagreements**: Recognize when you've reached values, not facts

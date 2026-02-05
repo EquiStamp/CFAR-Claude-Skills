@@ -1,85 +1,106 @@
 ---
 name: freedom-of-action
-description: [TODO: Complete and informative explanation of what the skill does and when to use it. Include WHEN to use this skill - specific scenarios, file types, or tasks that trigger it.]
+description: >
+  CFAR rationality technique for identifying where default frames artificially constrain
+  perceived options and expanding the action space. Use when the user: (1) feels stuck
+  with no good options, (2) wants to identify artificial constraints on their choices,
+  (3) needs to expand their perceived action space, (4) feels obligated rather than
+  choosing, (5) wants to explore what a "fair bid" from a situation looks like, or
+  (6) wants to practice noticing where they've stopped considering alternatives.
+  Triggers: "freedom of action", "no good options", "feel stuck", "feel obligated",
+  "what are my options", "expand options", "default behavior", "comfort zone",
+  "learned helplessness", "CFAR".
 ---
 
-# Freedom Of Action
+# Freedom of Action
 
-## Overview
+A CFAR meta-technique for recognizing where default frames limit perceived options and deliberately expanding the action space. Most constraints on action are perceived rather than real — this technique systematically identifies and dissolves artificial limitations.
 
-[TODO: 1-2 sentences explaining what this skill enables]
+## Three Modes
 
-## Structuring This Skill
+1. **Design Mode** — Map the user's perceived constraints in a domain and identify which are real vs. assumed
+2. **Practice Mode** — Walk through constraint identification on a practice situation
+3. **Execute Mode** — Expand the action space for a real situation where the user feels stuck
 
-[TODO: Choose the structure that best fits this skill's purpose. Common patterns:
+## Core Insight
 
-**1. Workflow-Based** (best for sequential processes)
-- Works well when there are clear step-by-step procedures
-- Example: DOCX skill with "Workflow Decision Tree" → "Reading" → "Creating" → "Editing"
-- Structure: ## Overview → ## Workflow Decision Tree → ## Step 1 → ## Step 2...
+Most people operate within a narrow default action space due to inertia, habits, assumptions about what's "allowed," and emotional aversions. For most of us, it's instrumentally rational to explore a wider set of possible actions beyond our defaults.
 
-**2. Task-Based** (best for tool collections)
-- Works well when the skill offers different operations/capabilities
-- Example: PDF skill with "Quick Start" → "Merge PDFs" → "Split PDFs" → "Extract Text"
-- Structure: ## Overview → ## Quick Start → ## Task Category 1 → ## Task Category 2...
+## Core Process
 
-**3. Reference/Guidelines** (best for standards or specifications)
-- Works well for brand guidelines, coding standards, or requirements
-- Example: Brand styling with "Brand Guidelines" → "Colors" → "Typography" → "Features"
-- Structure: ## Overview → ## Guidelines → ## Specifications → ## Usage...
+### Step 1: Identify the Default Frame
+"What are you currently doing or planning to do? What feels like the 'obvious' or 'only' approach?"
 
-**4. Capabilities-Based** (best for integrated systems)
-- Works well when the skill provides multiple interrelated features
-- Example: Product Management with "Core Capabilities" → numbered capability list
-- Structure: ## Overview → ## Core Capabilities → ### 1. Feature → ### 2. Feature...
+### Step 2: Surface Assumptions
+"What are you assuming must be true for this to be your only option?"
+- "What constraints are you operating under?"
+- "Which of those constraints have you actually verified?"
+- "Which are assumed, habitual, or emotional?"
 
-Patterns can be mixed and matched as needed. Most skills combine patterns (e.g., start with task-based, add workflow for complex operations).
+### Step 3: Expand the Action Space
+For each assumed constraint, ask: "What if this constraint didn't apply?"
+- "What would you do if money/time/social pressure weren't factors?"
+- "What would someone with no prior context do in this situation?"
+- "What would your most creative friend suggest?"
 
-Delete this entire "Structuring This Skill" section when done - it's just guidance.]
+### Step 4: Evaluate the Fair Bid
+"What is this situation actually asking of you vs. what you think it demands?"
+- "Are you over-bidding — giving more than the situation calls for?"
+- "What would a 'fair' exchange look like here?"
+- "What's the minimum viable action that addresses the real need?"
 
-## [TODO: Replace with the first main section based on chosen structure]
+### Step 5: Choose Deliberately
+From the expanded set of options, choose based on actual values rather than defaults.
 
-[TODO: Add content here. See examples in existing skills:
-- Code samples for technical skills
-- Decision trees for complex workflows
-- Concrete examples with realistic user requests
-- References to scripts/templates/references as needed]
+## Diagnostic Questions
 
-## Resources
+Use these to identify where freedom is artificially constrained:
 
-This skill includes example resource directories that demonstrate how to organize different types of bundled resources:
+**Noticing learned helplessness**: "Where have you stopped considering options? Where do you act as if options don't exist without having verified?"
 
-### scripts/
-Executable code (Python/Bash/etc.) that can be run directly to perform specific operations.
+**Noticing obligation vs. choice**: "Where do you feel obligated rather than choosing? Would you do this if no one were watching?"
 
-**Examples from other skills:**
-- PDF skill: `fill_fillable_fields.py`, `extract_form_field_info.py` - utilities for PDF manipulation
-- DOCX skill: `document.py`, `utilities.py` - Python modules for document processing
+**Noticing emotional constraints**: "What options do you avoid considering because they feel scary, embarrassing, or 'not allowed'?"
 
-**Appropriate for:** Python scripts, shell scripts, or any executable code that performs automation, data processing, or specific operations.
+**Playful mode test**: "If you were in a playful, creative mood rather than a stressed one, what additional options would you see?"
 
-**Note:** Scripts may be executed without loading into context, but can still be read by Claude for patching or environment adjustments.
+## Facilitation Prompts
 
-### references/
-Documentation and reference material intended to be loaded into context to inform Claude's process and thinking.
+**Opening**: "You feel stuck. Let's figure out if the walls are real or painted on."
 
-**Examples from other skills:**
-- Product management: `communication.md`, `context_building.md` - detailed workflow guides
-- BigQuery: API reference documentation and query examples
-- Finance: Schema documentation, company policies
+**Constraint testing**: "You said you 'can't' do X. Is that literally impossible, or does it feel impossible?" / "Has anyone else done something similar?"
 
-**Appropriate for:** In-depth documentation, API references, database schemas, comprehensive guides, or any detailed information that Claude should reference while working.
+**Expansion**: "What options haven't you considered because they seem too weird, too bold, or too simple?" / "What would you do if you knew you couldn't fail?"
 
-### assets/
-Files not intended to be loaded into context, but rather used within the output Claude produces.
+**Fair bid**: "What does this situation actually require? Not what it feels like it requires — what does it actually need?"
 
-**Examples from other skills:**
-- Brand styling: PowerPoint template files (.pptx), logo files
-- Frontend builder: HTML/React boilerplate project directories
-- Typography: Font files (.ttf, .woff2)
+## Common Patterns
 
-**Appropriate for:** Templates, boilerplate code, document templates, images, icons, fonts, or any files meant to be copied or used in the final output.
+- **Social constraints as real constraints**: "People would judge me" often masks "I would judge me"
+- **Sunk cost as constraint**: Past investment shouldn't limit future options
+- **Perfectionism as constraint**: "I can't do it well enough" prevents doing it at all
+- **Identity as constraint**: "I'm not the kind of person who..." is almost always breakable
+- **Information avoidance**: Not exploring options because the current path is "good enough"
 
----
+## Practice Exercise: Comfort Zone Exploration (CoZE)
 
-**Any unneeded directories can be deleted.** Not every skill requires all three types of resources.
+1. Pick an area where you feel constrained
+2. List all your perceived constraints
+3. For each: Is it real, assumed, or emotional?
+4. Design one small, safe experiment to test an assumed constraint
+5. Run the experiment
+6. What did you learn about what's actually possible?
+
+## Common Failure Modes
+
+- **Dismissing all constraints**: Some constraints ARE real. Don't ignore genuine risks.
+- **Expansion without action**: Generating options is valuable, but only if you actually try some.
+- **One-time exercise**: Freedom of action is a ongoing practice, not a one-shot technique.
+
+## Integration
+
+- **Goal Factoring**: Factor goals to reveal which constraints come from the goal structure itself
+- **Aversion Factoring**: Many "constraints" are actually aversions in disguise
+- **Murphyjitsu**: Stress-test expanded options
+- **Resolve Cycles**: When the barrier is activation energy, not lack of options
+- **Internal Double Crux**: When one part of you sees options the other won't consider

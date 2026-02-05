@@ -1,85 +1,116 @@
 ---
 name: pride-self-recognition
-description: [TODO: Complete and informative explanation of what the skill does and when to use it. Include WHEN to use this skill - specific scenarios, file types, or tasks that trigger it.]
+description: >
+  CFAR rationality technique for discovering authentic values by converting frustrations
+  and annoyances into positive value statements. Uses iterative loop of expressing annoyance,
+  finding the underlying value, re-expressing, and checking if the emotional charge has shifted.
+  Use when the user: (1) is frustrated or annoyed and wants to understand why, (2) wants to
+  discover what they really care about, (3) needs to move from self-criticism to
+  self-recognition, (4) wants to identify their authentic values (vs. "shoulds"),
+  (5) practice converting complaints into values, or (6) wants to understand their "who-ness."
+  Triggers: "what do I care about", "why am I frustrated", "values", "self-recognition",
+  "pride", "who-ness", "what matters to me", "annoyance", "CFAR".
 ---
 
-# Pride Self Recognition
+# Pride / Self-Recognition
 
-## Overview
+A CFAR technique for discovering authentic values by mining frustrations. The core loop: express annoyance, find the underlying value, re-express, check if the emotional charge has shifted. From CFAR's "who-ness" curriculum thread.
 
-[TODO: 1-2 sentences explaining what this skill enables]
+## Three Modes
 
-## Structuring This Skill
+1. **Design Mode** — Map frustrations to values across a life domain
+2. **Practice Mode** — Walk through the frustration-to-value loop on practice examples
+3. **Execute Mode** — Process a live frustration to discover the underlying value
 
-[TODO: Choose the structure that best fits this skill's purpose. Common patterns:
+## Core Insight
 
-**1. Workflow-Based** (best for sequential processes)
-- Works well when there are clear step-by-step procedures
-- Example: DOCX skill with "Workflow Decision Tree" → "Reading" → "Creating" → "Editing"
-- Structure: ## Overview → ## Workflow Decision Tree → ## Step 1 → ## Step 2...
+Frustrations and annoyances are signals pointing to authentic values. "I hate how disorganized this meeting is" reveals that you value clarity and efficient use of time. The technique converts complaints into self-knowledge.
 
-**2. Task-Based** (best for tool collections)
-- Works well when the skill offers different operations/capabilities
-- Example: PDF skill with "Quick Start" → "Merge PDFs" → "Split PDFs" → "Extract Text"
-- Structure: ## Overview → ## Quick Start → ## Task Category 1 → ## Task Category 2...
+## The Frustration-to-Value Loop
 
-**3. Reference/Guidelines** (best for standards or specifications)
-- Works well for brand guidelines, coding standards, or requirements
-- Example: Brand styling with "Brand Guidelines" → "Colors" → "Typography" → "Features"
-- Structure: ## Overview → ## Guidelines → ## Specifications → ## Usage...
+### Step 1: Express the Annoyance
+"What's frustrating you? Don't filter — just say it."
+Let the user vent concretely and specifically.
 
-**4. Capabilities-Based** (best for integrated systems)
-- Works well when the skill provides multiple interrelated features
-- Example: Product Management with "Core Capabilities" → numbered capability list
-- Structure: ## Overview → ## Core Capabilities → ### 1. Feature → ### 2. Feature...
+### Step 2: Find the Underlying Value
+"What would be different if this weren't a problem?" / "What do you wish were true instead?"
+Translate the absence of the frustration into a positive value statement.
 
-Patterns can be mixed and matched as needed. Most skills combine patterns (e.g., start with task-based, add workflow for complex operations).
+Example flow:
+- "I'm annoyed that my team doesn't communicate clearly"
+- → Value: "I care about clear, honest communication"
+- "I hate how fake networking events feel"
+- → Value: "I value authentic connection"
 
-Delete this entire "Structuring This Skill" section when done - it's just guidance.]
+### Step 3: Re-Express with the Value
+Restate the frustration as a value: "It sounds like you care deeply about [value]. Is that right?"
 
-## [TODO: Replace with the first main section based on chosen structure]
+Check resonance: "When I say that, does it feel true? Does something in you go 'yes'?"
 
-[TODO: Add content here. See examples in existing skills:
-- Code samples for technical skills
-- Decision trees for complex workflows
-- Concrete examples with realistic user requests
-- References to scripts/templates/references as needed]
+### Step 4: Check Emotional Charge Shift
+"How does the frustration feel now? Has the charge changed?"
+- If the charge has lessened or transformed into something warmer, the value identification is working
+- If still charged, there may be a deeper or different value underneath — go back to Step 2
 
-## Resources
+### Step 5: Iterate
+Repeat until the frustration has transformed into self-recognition: "Oh, I care about this because I'm someone who values X."
 
-This skill includes example resource directories that demonstrate how to organize different types of bundled resources:
+## Extended Exercise: Bugs-to-Values
 
-### scripts/
-Executable code (Python/Bash/etc.) that can be run directly to perform specific operations.
+For a broader values exploration:
 
-**Examples from other skills:**
-- PDF skill: `fill_fillable_fields.py`, `extract_form_field_info.py` - utilities for PDF manipulation
-- DOCX skill: `document.py`, `utilities.py` - Python modules for document processing
+1. **List 5-10 frustrations** across life domains (work, relationships, health, projects)
+2. **For each frustration**, run the loop: What value does this reveal?
+3. **Look for patterns**: Do multiple frustrations point to the same underlying value?
+4. **Identify your top 3-5 values**: The ones that show up most consistently
+5. **Check alignment**: "Am I living in accordance with these values? Where's the gap?"
 
-**Appropriate for:** Python scripts, shell scripts, or any executable code that performs automation, data processing, or specific operations.
+## Facilitation Prompts
 
-**Note:** Scripts may be executed without loading into context, but can still be read by Claude for patching or environment adjustments.
+**Opening**: "What's been frustrating you lately? Pick something that has some emotional charge."
 
-### references/
-Documentation and reference material intended to be loaded into context to inform Claude's process and thinking.
+**Deepening**: "Why does this bother you specifically?" / "What does it say about what you care about?" / "If you could wave a magic wand, what would be different?"
 
-**Examples from other skills:**
-- Product management: `communication.md`, `context_building.md` - detailed workflow guides
-- BigQuery: API reference documentation and query examples
-- Finance: Schema documentation, company policies
+**Value extraction**: "It sounds like you really value [X]. Does that resonate?" / "Say 'I care about [X]' and check — does it feel true?"
 
-**Appropriate for:** In-depth documentation, API references, database schemas, comprehensive guides, or any detailed information that Claude should reference while working.
+**Charge check**: "How does the frustration feel now? Same intensity, or has something shifted?" / "Does knowing this about yourself change anything?"
 
-### assets/
-Files not intended to be loaded into context, but rather used within the output Claude produces.
+**Pattern finding**: "Several of your frustrations seem to point toward [value]. Does that seem right?"
 
-**Examples from other skills:**
-- Brand styling: PowerPoint template files (.pptx), logo files
-- Frontend builder: HTML/React boilerplate project directories
-- Typography: Font files (.ttf, .woff2)
+## Common Patterns People Discover
 
-**Appropriate for:** Templates, boilerplate code, document templates, images, icons, fonts, or any files meant to be copied or used in the final output.
+- **Autonomy**: Frustrations about being controlled or micromanaged
+- **Competence**: Frustrations about inefficiency or poor quality
+- **Authenticity**: Frustrations about fakeness or performative behavior
+- **Connection**: Frustrations about being unseen or misunderstood
+- **Growth**: Frustrations about stagnation or wasted potential
+- **Impact**: Frustrations about work that doesn't matter
+- **Craftsmanship**: Frustrations about sloppy work (in self or others)
 
----
+## Self-Compassion Integration
 
-**Any unneeded directories can be deleted.** Not every skill requires all three types of resources.
+Key insight: Values are facts about yourself, not things to judge. Getting annoyed at your values "makes about as much sense as shouting at the sky for raining."
+
+When a user discovers a value they feel they "shouldn't" have, or judges themselves for caring about something: "This is part of who you are. You don't have to justify caring about it. The question is: knowing this about yourself, how do you want to respond?"
+
+## Common Failure Modes
+
+- **Stopping at the complaint**: The value is underneath the frustration, not the frustration itself
+- **Identifying "should" values instead of real values**: Check resonance. If it doesn't feel true in the body, it's a "should."
+- **Self-judgment about values**: Normalize. Everyone has these. They're information, not flaws.
+- **Skipping the charge check**: The emotional shift is how you know you've found the real value.
+
+## Practice Exercise
+
+1. Pick 3 recent annoyances
+2. For each: "What value is underneath this?"
+3. State each value: "I care about [X]"
+4. Check resonance: Does it feel true?
+5. Notice: Has the frustration shifted?
+
+## Integration
+
+- **Focusing**: Access the felt sense of the frustration for deeper value discovery
+- **Internal Double Crux**: When values conflict with each other
+- **Goal Factoring**: Factor goals to check if they align with discovered values
+- **Hamming Questions**: "Given these values, what's the most important problem in my life?"
