@@ -1,85 +1,117 @@
 ---
 name: goal-factoring
-description: [TODO: Complete and informative explanation of what the skill does and when to use it. Include WHEN to use this skill - specific scenarios, file types, or tasks that trigger it.]
+description: >
+  CFAR rationality technique for decomposing actions into their underlying goals and finding
+  better paths to achieve those goals. Use when the user: (1) is considering a major decision
+  and wants to understand their real motivations, (2) feels stuck doing something they don't
+  enjoy and wants to find alternatives, (3) wants to check if their current activities actually
+  serve their goals, (4) needs to resolve a conflict between two options by understanding
+  the underlying goals, (5) wants to simplify their life by finding actions that serve
+  multiple goals, or (6) wants to practice decomposing actions into goals.
+  Triggers: "goal factoring", "why am I doing this", "what do I really want",
+  "should I keep doing", "is this worth it", "alternatives", "underlying goals",
+  "real motivation", "CFAR".
 ---
 
 # Goal Factoring
 
-## Overview
+A CFAR technique for decomposing actions into their underlying goals and finding more efficient or satisfying paths to achieve those goals. Based on the insight that we often pursue activities for reasons we haven't made explicit — and once explicit, better options become visible.
 
-[TODO: 1-2 sentences explaining what this skill enables]
+## Three Modes
 
-## Structuring This Skill
+1. **Design Mode** — Map a life domain's activities to underlying goals; find gaps and redundancies
+2. **Practice Mode** — Walk through goal factoring on a low-stakes example to build the skill
+3. **Execute Mode** — Factor a real action or decision to reveal underlying goals and better alternatives
 
-[TODO: Choose the structure that best fits this skill's purpose. Common patterns:
+## The Parable of the Orange
 
-**1. Workflow-Based** (best for sequential processes)
-- Works well when there are clear step-by-step procedures
-- Example: DOCX skill with "Workflow Decision Tree" → "Reading" → "Creating" → "Editing"
-- Structure: ## Overview → ## Workflow Decision Tree → ## Step 1 → ## Step 2...
+Two people want an orange. They compromise: split it in half. But one wanted the juice and the other wanted the peel for baking. Both could have had 100% of what they wanted if they'd factored their goals.
 
-**2. Task-Based** (best for tool collections)
-- Works well when the skill offers different operations/capabilities
-- Example: PDF skill with "Quick Start" → "Merge PDFs" → "Split PDFs" → "Extract Text"
-- Structure: ## Overview → ## Quick Start → ## Task Category 1 → ## Task Category 2...
+**Lesson**: Before negotiating (with others or yourself), understand what you actually want. The surface-level action ("get the orange") often hides the real goal.
 
-**3. Reference/Guidelines** (best for standards or specifications)
-- Works well for brand guidelines, coding standards, or requirements
-- Example: Brand styling with "Brand Guidelines" → "Colors" → "Typography" → "Features"
-- Structure: ## Overview → ## Guidelines → ## Specifications → ## Usage...
+## Core Process
 
-**4. Capabilities-Based** (best for integrated systems)
-- Works well when the skill provides multiple interrelated features
-- Example: Product Management with "Core Capabilities" → numbered capability list
-- Structure: ## Overview → ## Core Capabilities → ### 1. Feature → ### 2. Feature...
+### Step 1: Pick an Action to Factor
+"What's something you do regularly, or a decision you're considering?"
+Choose something with emotional weight — things you feel conflicted about are ideal candidates.
 
-Patterns can be mixed and matched as needed. Most skills combine patterns (e.g., start with task-based, add workflow for complex operations).
+### Step 2: List All Goals This Action Serves
+"Why do you do this? List every reason, including ones that feel silly or small."
 
-Delete this entire "Structuring This Skill" section when done - it's just guidance.]
+Probe for hidden goals:
+- "What would you lose if you stopped?"
+- "What would change in your life?"
+- "Is there a social component — who would notice?"
+- "Does it serve your identity — does it make you feel like a certain kind of person?"
+- "Is part of the reason just habit or comfort?"
 
-## [TODO: Replace with the first main section based on chosen structure]
+**Important**: Include aversions (things you're avoiding) as well as goals (things you're pursuing). "I go to these meetings because I'd feel guilty if I didn't" is a valid goal to capture.
 
-[TODO: Add content here. See examples in existing skills:
-- Code samples for technical skills
-- Decision trees for complex workflows
-- Concrete examples with realistic user requests
-- References to scripts/templates/references as needed]
+### Step 3: For Each Goal, Brainstorm Alternative Paths
+"For each goal on your list, what are other ways you could achieve it?"
 
-## Resources
+Generate at least 3 alternatives per goal. Include:
+- More direct paths to the same goal
+- Actions that serve multiple goals simultaneously
+- Lower-cost ways to achieve the same thing
+- Ways to dissolve the goal entirely (maybe you don't actually need it)
 
-This skill includes example resource directories that demonstrate how to organize different types of bundled resources:
+### Step 4: Synthesize — Find the Best Portfolio
+"Looking at all your goals and all the alternatives, what's the best combination?"
 
-### scripts/
-Executable code (Python/Bash/etc.) that can be run directly to perform specific operations.
+Evaluate options by:
+- **Coverage**: Does this set of actions hit all the real goals?
+- **Efficiency**: Are any actions redundant?
+- **Cost**: What's the total time/energy/money investment?
+- **Joy**: Which alternatives would you actually enjoy more?
 
-**Examples from other skills:**
-- PDF skill: `fill_fillable_fields.py`, `extract_form_field_info.py` - utilities for PDF manipulation
-- DOCX skill: `document.py`, `utilities.py` - Python modules for document processing
+### Step 5: Reality Check
+"Does this new plan feel right? Check your gut — is there a goal we missed?"
 
-**Appropriate for:** Python scripts, shell scripts, or any executable code that performs automation, data processing, or specific operations.
+If something feels off, there's likely a hidden goal. Go back to Step 2.
 
-**Note:** Scripts may be executed without loading into context, but can still be read by Claude for patching or environment adjustments.
+Use the **replacement test**: "If I magically had all these goals met through the new plan, would I still want to do the original action?" If yes, there's a missing goal.
 
-### references/
-Documentation and reference material intended to be loaded into context to inform Claude's process and thinking.
+## Facilitation Prompts
 
-**Examples from other skills:**
-- Product management: `communication.md`, `context_building.md` - detailed workflow guides
-- BigQuery: API reference documentation and query examples
-- Finance: Schema documentation, company policies
+**Opening**: "What's something you spend time on that you're not sure is worth it? Or a decision you're stuck on?"
 
-**Appropriate for:** In-depth documentation, API references, database schemas, comprehensive guides, or any detailed information that Claude should reference while working.
+**Goal elicitation**: "Why do you do this?" / "What would you miss if you stopped?" / "What's the worst thing about stopping?" / "Who would care if you stopped?"
 
-### assets/
-Files not intended to be loaded into context, but rather used within the output Claude produces.
+**Hidden goal detection**: "Is there something this gives you that you'd be embarrassed to admit?" / "Does this make you feel like a certain kind of person?" / "Are you avoiding something by doing this?"
 
-**Examples from other skills:**
-- Brand styling: PowerPoint template files (.pptx), logo files
-- Frontend builder: HTML/React boilerplate project directories
-- Typography: Font files (.ttf, .woff2)
+**Alternative generation**: "If this option disappeared overnight, how would you get [goal] met?" / "What's the laziest way to achieve this?" / "Who do you know who gets this same goal met differently?"
 
-**Appropriate for:** Templates, boilerplate code, document templates, images, icons, fonts, or any files meant to be copied or used in the final output.
+**Synthesis**: "Can you combine any of these? Is there one action that hits three of your goals?" / "Which of these would you actually look forward to?"
 
----
+## Common Patterns
 
-**Any unneeded directories can be deleted.** Not every skill requires all three types of resources.
+- **Sunk cost masquerading as a goal**: "I've invested so much" isn't a goal — it's loss aversion
+- **Identity goals**: Often the hardest to spot. "I'm the kind of person who..." is powerful
+- **Social goals hiding behind practical ones**: "I go to the gym for health" but really it's the community
+- **Avoidance goals**: "I do X to avoid feeling Y" — these are valid and important to capture
+- **Instrumental vs. terminal goals**: Keep factoring until you hit something that's valued for its own sake
+
+## Extended Exercise: Life Activity Audit
+
+1. List 10 regular activities (work, hobbies, obligations, habits)
+2. For each: list all goals it serves (minimum 3)
+3. Look for overlap: which goals show up across multiple activities?
+4. Look for orphans: which goals are only served by one activity?
+5. Design experiment: pick one activity and try replacing it with a more efficient alternative for one week
+
+## Common Failure Modes
+
+- **Surface-level factoring**: Listing obvious goals without probing for hidden ones
+- **Ignoring emotional/social goals**: These are real goals even if they feel "irrational"
+- **Analysis paralysis**: Goal factoring is a tool, not a lifestyle. Factor, decide, act.
+- **Replacing joy with efficiency**: If you enjoy the activity, that IS a goal. Don't optimize it away.
+- **Skipping the gut check**: The felt sense matters. If the new plan feels wrong, you missed something.
+
+## Integration
+
+- **Aversion Factoring**: When "avoiding X" shows up as a goal, factor the aversion
+- **Internal Double Crux**: When different goals conflict with each other
+- **Focusing**: Access the felt sense when intellectual factoring hits a wall
+- **Hamming Questions**: Use to identify which goals matter most
+- **Freedom of Action**: Goal factoring often reveals that constraints are assumed, not real
